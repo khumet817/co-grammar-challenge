@@ -6,9 +6,11 @@
     <title>CoGrammar Challenge</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
-    <script src="main.js"></script>
     <!-- BULMA -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+
+    <!-- JS LINK -->
+    <script src="js/button.js"></script>
 </head>
 <body>
     <!-- Hero from BULMA -->
@@ -29,8 +31,10 @@
             <nav class="tabs">
                 <div class="container">
                     <ul>
-                        <li class="is-active"><a>View Task</a></li>
                         <li><a>About CoGrammar</a></li>
+                        <li><a href="#task1">View Task 1</a></li>
+                        <li><a href="#task2">View Task 2</a></li>
+                        <li><a href="#task3">View Task 3</a></li>
                     </ul>
                 </div>
             </nav>
@@ -43,14 +47,30 @@
     </a>
 
     <main>
-        <section class="section">
+        <article class="section">
+            <div class="">
+                <h1 class="title">About CoGrammar</h1>
+
+                <p>
+                    CoGrammar is an edtech startup that is dedicated to closing the global tech skills gap. We achieve this by integrating human mentorship and code review into the world's leading tech education brands. CoGrammar has also built and scaled its own coding education product - HyperionDev - which supports learners from over 40 countries in changing into fulfilling tech careers. HyperionDev rebranded to CoGrammar in August 2018.
+                </p>
+
+                <a href="">Continue Reading...</a>
+            </div>
+        </article>
+
+        <section id="task1" class="section">
             <div class="container">
                 <h1 class="title">Task 1: Technical Skills</h1>
                 <h2 class="subtitle">
                    I have created a simple calculator using JavaScript, HTML, CSS and SASS.
                 </h2>
 
-                <a class="button is-info is-outlined is-rounded">Display/Hide Calculator</a>
+                <button class="button is-info is-outlined is-rounded" onclick="displayHide()">Display/Hide Calculator</button>
+            </div>
+
+            <div id="calculator">
+                I am a placeholder for the calculator that is yet to be created.
             </div>
         </section>
     </main>

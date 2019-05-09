@@ -9,20 +9,24 @@
     <!-- BULMA -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
 
-    <!-- JS LINK -->
-    <script src="js/button.js"></script>
+    <script type="text/javascript">
+        function displyNum(n1) {
+            calcform.txt1.value = calcform.txt1.value + n1;
+        }
+    </script>
 </head>
 <body>
     <!-- Hero from BULMA -->
     <section class="hero is-medium is-info is-bold">
         <div class="hero-body">
             <div class="container">
-            <h1 class="title">
-                The Assessment
-            </h1>
-            <h2 class="subtitle">
-               I have attempted Option A for task 1. 
-            </h2>
+                <h1 class="title">
+                    The Assessment
+                </h1>
+
+                <h2 class="subtitle">
+                    The following tasks have been attempted by Tabile Khume
+                </h2>
             </div>
         </div>
 
@@ -63,16 +67,52 @@
             <div class="container">
                 <h1 class="title">Task 1: Technical Skills</h1>
                 <h2 class="subtitle">
-                   I have created a simple calculator using JavaScript, HTML, CSS and SASS.
+                    I have attempted Option A for task 1. I have created a simple calculator using JavaScript, HTML, CSS and SASS.
                 </h2>
 
                 <button class="button is-info is-outlined is-rounded" onclick="displayHide()">Display/Hide Calculator</button>
             </div>
 
-            <div id="calculator">
-                I am a placeholder for the calculator that is yet to be created.
+            <div id="calculator" class="calculator-div-container">
+                <form name="calcform"lass="simpleCalculator">
+                    <input type="text" name="txt1" id="" style="text-align:right">
+                    
+                    <section>
+                        <input type="button" name="btn1" value="1" onclick="displyNum(btn1.value)">
+                        <input type="button" name="btn2" value="2" onclick="displyNum(btn2.value)">
+                        <input type="button" name="btn3" value="3" onclick="displyNum(btn3.value)">
+                        <input type="button" name="btnAdd" value="+" onclick="displyNum(btnAdd.value)"> 
+                    </section>
+
+                    <section>
+                        <input type="button" name="btn4" value="4" onclick="displyNum(btn4.value)">
+                        <input type="button" name="btn5" value="5" onclick="displyNum(btn5.value)">
+                        <input type="button" name="btn6" value="6" onclick="displyNum(btn6.value)">
+                        <input type="button" name="btnSubt" value="-"  onclick="displyNum(btnSubt.value)">
+                    </section>
+
+                    <section>
+                        <input type="button" name="btn7" value="7" onclick="displyNum(btn7.value)">
+                        <input type="button" name="btn8" value="8" onclick="displyNum(btn8.value)">
+                        <input type="button" name="btn9" value="9" onclick="displyNum(btn9.value)">
+                        <input type="button" name="btnMult" value="*" onclick="displyNum(btnMult.value)">
+                    </section>
+
+                    <section>
+                        <input type="button" name="btnClear" value="C">
+                        <input type="button" name="btn0" value="0" onclick="displyNum(btn0.value)">
+                        <input type="button" name="btnEqual" value="=" onclick="txt1.value=eval(txt1.value)">
+                        <input type="button" name="btnDiv" value="/" onclick="displyNum(btnDiv.value)">
+                    </section>
+                </form>
+                <section>
+                    I am a placeholder for the calculator description that is yet to be created. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae dicta in assumenda ex distinctio ut placeat autem repudiandae, rem ad enim, nemo quaerat similique praesentium, consequatur commodi ipsam eum repellat.
+                </section>
             </div>
         </section>
     </main>
+
+    <!-- JS LINK -->
+    <script src="js/button.js"></script>
 </body>
 </html>

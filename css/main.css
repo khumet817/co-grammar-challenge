@@ -6,18 +6,11 @@ body {
   padding: 0 20em !important; }
 
 #calculator {
-  width: 100%;
+  width: 50%;
   text-align: center;
   background-color: lightblue;
+  border: solid black .2em;
   margin-top: 1.5em; }
-
-.simpleCalculator {
-  border: solid black .2em; }
-
-.calculator-div-container {
-  display: grid;
-  height: auto;
-  grid-template-columns: repeat(2, 1fr); }
 
 .buttons-container {
   display: grid;
